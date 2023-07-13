@@ -1,0 +1,1 @@
+docker exec 7-13-23sfp-watch node $1
