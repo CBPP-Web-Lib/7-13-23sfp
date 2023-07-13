@@ -32,7 +32,7 @@ const draw_data = (data, column, colors)=>{
     return Math.round(-d[column]*1000)/10 + "%"
   }
 
-  const duration = 200
+  const duration = 500
 
   bar_groups.enter()
     .append("g")

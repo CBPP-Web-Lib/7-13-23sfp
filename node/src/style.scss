@@ -30,6 +30,7 @@
     }
     .data-picker {
         display:flex;
+        margin-top:20px;
         .picker-option {
             background-color: #fafafa;
             padding:10px;
@@ -48,10 +49,12 @@
             font-family: "proxima-nova-condensed",sans-serif;
             line-height:1.2;
             cursor:pointer;
+            transition: background 0.5s, color 0.5s;
             &.selected {
                 background-color: #666;
                 color:#fff;
                 .sub-figure-label {
+                    transition: color 0.5s;
                     color:#eee;
                 }
             }
