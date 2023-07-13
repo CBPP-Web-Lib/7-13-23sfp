@@ -66,6 +66,8 @@ const draw_data = (data, column, colors)=>{
         .attr("text-anchor","start")
         .text(state_names[d.State])
     })
+
+  svg.select("line.yaxis").raise()
   
   bar_groups
     .each(function(d) {
@@ -88,14 +90,7 @@ const draw_data = (data, column, colors)=>{
     })
 
   
-  svg.append("line")
-    .attr("class","yaxis")
-    .attr("stroke-width",0.3)
-    .attr("stroke","#000")
-    .attr("x1", 75)
-    .attr("x2", 75)
-    .attr("y1", 0)
-    .attr("y2", 150)
+  
     
 }
 
