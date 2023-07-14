@@ -29,7 +29,13 @@ const draw_data = (data, column, colors)=>{
   }
 
   const data_label = (d) => {
-    return Math.round(-d[column]*1000)/10 + "%"
+    var n = Math.round(-d[column]*1000)/10
+    n = (n+"").split(".")
+    if (n.length === 1) {
+      n[1] = "0"
+    }
+    n = n.join(".")
+    return n+ "%"
   }
 
   const duration = 500
