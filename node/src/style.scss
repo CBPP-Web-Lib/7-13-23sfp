@@ -102,20 +102,29 @@
     .figure-credit {
         position:absolute;
         top:100%;
+        width:100%;
         margin-top:0.3em;
         right:0px;
         color:#666;
         font-size:12pt;
         line-height:1;
-        text-align:right;
-        a {
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }   
+        display:flex;
+        justify-content: space-between;
+        .source-code {
+            font-size:10pt;
         }
-        a, a:visited {
-            color:inherit;
+        & > div {
+            &.cbpp-credit {
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }   
+                }
+                a, a:visited {
+                    color:inherit;
+            }
+            }
         }
     }
 

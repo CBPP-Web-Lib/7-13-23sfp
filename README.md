@@ -1,6 +1,8 @@
 Requirements: Docker
 
-Windows requires WSL or some sort of Unix shell
+Windows requires WSL or some sort of Unix shell.
+
+Main JS files are in node/src
 
 Run `./install.sh` first then
 
