@@ -114,16 +114,16 @@
             font-size:10pt;
         }
         & > div {
-            &.cbpp-credit {
-                a {
-                    text-decoration: none;
-                    &:hover {
-                        text-decoration: underline;
-                    }   
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }   
+                &.cbpp-credit {
+                    a, a:visited {
+                        color:inherit;
+                    }
                 }
-                a, a:visited {
-                    color:inherit;
-            }
             }
         }
     }
