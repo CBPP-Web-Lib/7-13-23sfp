@@ -63,6 +63,9 @@
     .chart-area, .legend {
         font-family: "proxima-nova-condensed",sans-serif;
     }
+    svg text {
+        user-select:none;
+    }
     .legend { 
         margin:20px;
         text-align:center;

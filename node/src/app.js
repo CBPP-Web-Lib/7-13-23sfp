@@ -24,4 +24,5 @@ Promise.all([
     draw_data(data, column, colors)
   })
   draw_data(data, mgr.getActiveColumn(), colors)
+  mgr.hashchangehandler()
 })
