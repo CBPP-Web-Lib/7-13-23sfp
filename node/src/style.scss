@@ -88,6 +88,7 @@
         font-size:11pt;
         line-height:1.2;
         color:#666;
+        margin-top:1em;
     }
     .legend-item {
         vertical-align: middle;
@@ -104,6 +105,15 @@
         font-size:12pt;
         line-height:1;
         text-align:right;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }   
+        }
+        a, a:visited {
+            color:inherit;
+        }
     }
 
 }
