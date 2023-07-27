@@ -27,6 +27,7 @@
         font-weight:400;
         font-size:19px;
         line-height:1;
+        margin-bottom:0;
     }
     .data-picker {
         display:flex;
@@ -39,12 +40,20 @@
             &:last-child {
                 margin-right:0;
             }
+            @media (max-width:832px) {
+                font-size:11pt;
+                line-height:13pt;
+            }
             .sub-figure-label {
                 text-transform: uppercase;
                 color:#333;
                 font-size:10pt;
                 font-family: "proxima-nova",sans-serif;
                 margin-bottom:0.5em;
+                @media (max-width:832px) {
+                    font-size:9pt;
+                    line-height:11pt;
+                }
             }
             font-family: "proxima-nova-condensed",sans-serif;
             line-height:1.2;
@@ -66,15 +75,31 @@
     svg text {
         user-select:none;
     }
+    .figure-freeze-pane-inner {
+        padding-top:0.2em;
+        padding-bottom:0em;
+        background-color: #fff;
+        &.shifted {
+            border-bottom:1px solid #aaa;
+        }
+    }
     .legend { 
         margin:20px;
         text-align:center;
         .legend-item {
             display:inline-block; 
             margin-right:20px;  
+            @media (max-width:832px) {
+                margin-right:10px;
+            }
             &:last-child {
                 margin-right:0;
             }
+        }
+        @media (max-width:832px) {
+            font-size:11pt;
+            line-height:13pt;
+            margin:10px;
         }
     }
     .legend-item .legend-box {
@@ -86,6 +111,10 @@
         margin-right:5px;
         position:relative;
         top:-2px;
+        @media (max-width:832px) {
+            width:10px;
+            height:10px;
+        }
     }
     .figure-notes {
         font-size:11pt;

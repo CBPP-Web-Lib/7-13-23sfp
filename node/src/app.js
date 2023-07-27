@@ -7,6 +7,7 @@ import { setup_svg } from "./setup_svg"
 import { DataManager } from "./data_manager"
 import { draw_data } from "./draw_data"
 import { setup_legend } from "./setup_legend"
+import { freeze_switch } from "./freeze_switch"
 
 Promise.all([
   new Promise((resolve)=>{
@@ -20,6 +21,7 @@ Promise.all([
   setup_svg()
   const mgr = new DataManager()
   const colors = setup_legend()
+  freeze_switch()
   mgr.onChange((column)=>{
     draw_data(data, column, colors)
   })
