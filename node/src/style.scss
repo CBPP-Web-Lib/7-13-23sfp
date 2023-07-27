@@ -141,6 +141,9 @@
         justify-content: space-between;
         .source-code {
             font-size:10pt;
+            a {
+                white-space:nowrap;
+            }
         }
         & > div {
             a {
